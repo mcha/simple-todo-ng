@@ -1,0 +1,23 @@
+{
+  "name": "todo-server",
+  "version": "0.0.1",
+  "description": "Simple todo server api",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "~1.9.3",
+    "express": "~4.10.4",
+    "mongoose": "~3.8.20",
+    "morgan": "~1.5.0",
+    "multer": "~0.1.6",
+    "path": "~0.4.9",
+    "underscore": "^1.8.3",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
+   },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "MCA",
+  "license": "BSD-2-Clause"
+}

@@ -1,0 +1,17 @@
+
+<div class=".panel panel-default">
+  <div class="panel-heading">
+    <h3>Todo Edition</h3>
+  </div>
+  <div class="panel-body">
+    <form class="form-inline">
+      <div id="form-group">
+        <label>Label :&nbsp;</label>
+        <input type="text" name="label" data-ng-model="vm.todo.label">&nbsp;
+        <button class="btn btn-sm btn-success" data-ng-click="vm.save()"> <i class="fa fa-check"></i>&nbsp; Save</button>
+        &nbsp;
+        <a data-ng-href="#/todos" class="btn btn-sm btn-warning"> <i class="fa fa-history"> </i>&nbsp; Cancel</a>
+      </div>
+    </form>
+  </div>
+</div>

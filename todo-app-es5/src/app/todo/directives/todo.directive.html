@@ -1,0 +1,15 @@
+    <form class="form-inline" data-ng-hide="vm.enabled">
+      <div id="form-group">
+        <div class="form-control" data-ng-bind="::vm.todo.label"></div>&nbsp;
+        <a data-ng-click="vm.delete(todo._id)" class="btn btn-sm btn-danger"> <i class="fa fa-trash"></i>&nbsp; Delete</a>
+        <a data-ng-click="vm.enableModification()" class="btn btn-sm btn-warning"> <i class="fa fa-pencil"></i>&nbsp; Modify</a>
+      </div>
+    </form>
+
+    <form class="form-inline" data-ng-show="vm.enabled">
+      <div id="form-group">
+        <input id="label_{{vm.todo._id}}" type="text" name="label" data-ng-model="vm.todo.label" class="form-control mca-todo-labelbox" size="{{vm.todo.label.length}}">&nbsp;
+        <button class="btn btn-sm btn-success" data-ng-click="vm.save()"> <i class="fa fa-check"></i>&nbsp; Save</button>
+        <a data-ng-click="vm.disableModification()" class="btn btn-sm btn-warning"> <i class="fa fa-history"> </i>&nbsp; Cancel</a>
+      </div>
+    </form>

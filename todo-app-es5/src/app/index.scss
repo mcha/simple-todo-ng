@@ -1,0 +1,26 @@
+
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$rootPath: '../..' !default;
+$navbar-inverse-link-color: #5AADBB;
+$icon-font-path: '#{$rootPath}/node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+$fa-font-path: '#{$rootPath}/node_modules/font-awesome/fonts';
+
+// ~ ensure that the import root dir will be node_modules
+//@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import '../../node_modules/font-awesome/scss/font-awesome';
+
+@font-face {
+  font-family: todos;
+  src: url(./fonts/ostrich-sans-master/webfonts/ostrich-sans-black.woff);
+}
+
+* {
+  font-family: todos;
+}
+
+@import './todo/todo.scss';
+

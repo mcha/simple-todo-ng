@@ -1,0 +1,8 @@
+(function() {
+  'use strict';
+
+  angular
+    .module('todo.app')
+    .constant('API_BASE_URL', 'http://localhost:3000/api');
+
+})();
