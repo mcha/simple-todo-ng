@@ -10,14 +10,11 @@ Look at api_routes.js
 * TodoService.js : Local in memory storage
 * TodoServiceMongo.js : Mongo storage
 
-To be configured in api_routes.js and in webapp_routes.js
+To be configured in api_routes.js.
 
 ## Start the server
 
-* node server.js
-* Live reload :
-  * npm install -g nodemon
-  * nodemon server.js
+`npm run start`
 
 A simple Todo Express App UI is deployed at http://localhost:3000/
 

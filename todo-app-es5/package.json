@@ -20,6 +20,7 @@
     "dev": "webpack-dev-server --history-api-fallback --hot --inline --progress",
     "test": "karma start",
     "test:live": "karma start --auto-watch --no-single-run"
+    "e2e": "protractor protractor.conf.js"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.1",
